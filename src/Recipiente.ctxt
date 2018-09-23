@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Recipiente
+comment1.params=
+comment1.target=Recipiente()
+comment1.text=\n\ Constructor\ sin\ parametros.\ Setea\ la\ capacidad\ maxima\ a\ un\ valor\ por\ defecto\n
+comment2.params=capacidadMaxima
+comment2.target=Recipiente(int)
+comment2.text=\n\ Constructor\ con\ paraemtro.\ Setea\ la\ capacidad\ maxima\ al\ valor\ indicado\n\ @param\ capacidadMaxima\ el\ valor\ de\ la\ maxima\ capacidad\ de\ este\ recipiente\n\ \n\ @throws\ IllegalArgumentException\ si\ el\ parametro\ excede\ la\ capacidad\ maxima\ por\ defecto\n
+comment3.params=
+comment3.target=Ingrediente\ getTipoIngredienteAlmacenado()
+comment3.text=\n\ Devuelve\ el\ tipo\ de\ ingrediente\ que\ este\ recipiente\ almacena\t\n\ @return\ el\ ingrediente\ almacenado\n
+comment4.params=cantidadAgregada
+comment4.target=void\ agregar(int)
+comment4.text=\n\ Agrega\ contenido\ al\ recipiente\n\ \n\ @param\ cantidadAgregada\ la\ cantidad\ de\ contenido\ a\ agregar\n\ @throws\ CapacidadExcedidaException\ cuando\ intenta\ agregarse\ mas\ contendio\ del\ que\ el\ recipiente\ puede\ alojar\n\ @throws\ IllegalArgumentException\ cuando\ la\ cantidad\ a\ agregar\ es\ un\ numero\ negativo\n\ \n
+comment5.params=cantidadAExtraer
+comment5.target=void\ extraer(int)
+comment5.text=\n\ Extrae\ contendio\ del\ recipiente\n\ \n\ @param\ cantidadAExtraer\ la\ cantidad\ a\ extraer\n\ @throws\ CapacidadExcedidaException\ cuando\ intenta\ extraerse\ una\ cantidad\ mayor\ a\ la\ diponible\ en\ el\ recipiente\n\ @throws\ IllegalArgumentException\ cuando\ la\ cantida\ a\ extraer\ es\ un\ numero\ negativo\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\n\ Devuleve\ un\ string\ representando\ este\ Recipiente.\ El\ string\ posee\ el\ siguiente\ formato\:\n\ "Recipiente\ contiene\ <Ingrediente>\ [<cantidadDisponible>/<capacidadMaxima>]"\n\ \n\ Ej.\n\ "Recipiente\ contiene\ AGUA\ [1500/2000]"\n
+comment7.params=
+comment7.target=int\ getCapacidadMaxima()
+comment7.text=\n\ Getter\n\ @return\ la\ capacidad\ maxima\ de\ este\ recipiente.\n
+comment8.params=
+comment8.target=int\ getCantidadIngredienteDisponible()
+comment8.text=\n\ Getter\n\ @return\ la\ cantidad\ de\ contenido\ disponible\ en\ el\ recipiente.\n
+numComments=9

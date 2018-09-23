@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=MaquinaDeEstados
+comment0.text=\n\ Esta\ inferfaz\ representa\ una\ maquina\ de\ estados.\ Las\ siguientes\ son\ transiciones\ validas\n\ entre\ estados\n\ \n//\ APAGADO\ ->\ LISTO\n//\ LISTO\ ->\ OPERANDO\n//\ LISTO\ ->\ FALLA\n//\ LISTO\ ->\ APAGADO\n//\ OPERANDO\ ->\ LISTO\n//\ OPERANDO\ ->\ FALLA\n\n
+comment1.params=
+comment1.target=void\ operar()
+comment1.text=\n\ Trancisiona\ al\ estado\ OPERANDO\ \ \n\ \n\ @throws\ IllegalStateException\ cuando\ se\ intenta\ operar\ desde\ un\ estado\ invalido\n
+comment2.params=
+comment2.target=void\ restablecer()
+comment2.text=\n\ \n\ Restablece\ la\ maquina\ desde\ cualquier\ estado\ \n\ Trancisiona\ al\ estado\ LISTO\ (si\ no\ encuentra\ fallas)\ \n\ Trancisiona\ al\ estado\ FALLA\ (si\ existe\ alguna\ condicion\ de\ error)\n\ \n\ @throws\ IllegalStateException\ cuando\ se\ intenta\ operar\ desde\ un\ estado\ invalido\n
+comment3.params=
+comment3.target=void\ encender()
+comment3.text=\n\ Enciende\ la\ maquina\ (solo\ desde\ el\ estado\ APAGADO)\ \n\ Trancisiona\ al\ estado\ LISTO\ (si\ no\ encuentra\ fallas)\ \n\ Trancisiona\ al\ estado\ FALLA\ (si\ existe\ alguna\ condicion\ de\ error)\n\ \n\ @throws\ IllegalStateException\ cuando\ se\ intenta\ operar\ desde\ un\ estado\ invalido\n
+comment4.params=
+comment4.target=void\ apagar()
+comment4.text=\n\ Apaga\ la\ maquina.\n\ Trancisiona\ al\ estado\ APAGADO\ (si\ no\ encuentra\ fallas)\n\ No\ es\ posible\ apagar\ la\ maquina\ si\ esta\ OPERANDO\n\ \n\ @throws\ IllegalStateException\ cuando\ se\ intenta\ operar\ desde\ un\ estado\ invalido\n
+comment5.params=
+comment5.target=void\ mantener()
+comment5.text=\ \n\ Lleva\ la\ maquina\ a\ estado\ de\ mantenimiento\n\ Trancisiona\ al\ estado\ \n\ \n
+comment6.params=
+comment6.target=Estado\ getEstado()
+comment6.text=\n\ Retorna\ el\ estado\ actual\ de\ la\ maquina.\n\ \n\ @return\ estado\ actual\ de\ la\ maquina.\n
+numComments=7
