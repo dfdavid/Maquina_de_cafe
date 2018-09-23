@@ -47,8 +47,11 @@ public class Receta {
      * @return el peso total de la receta
      */
     public int volumenTotalReceta(){
-        //TODO implementar el metodo
-        return -1;
+        int volumen_total=0;
+        for (int cantidad: ingredientes.values()){
+            volumen_total=volumen_total+cantidad;
+        }
+        return volumen_total;
     }
     
     /**
