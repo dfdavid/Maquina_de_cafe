@@ -22,19 +22,24 @@ public class Receta {
     {
         //TODO implementar el metodo
         // ingredientes posibles: CAFE, LECHE, AZUCAR, CACAO, AGUA
-        ArrayList<String> ingPosibles = new ArrayList();
-        for (Ingrediente i: Ingrediente.values()){
-            ingPosibles.add(i);
-        }
-     
-        
-        if ( Ingrediente.values()==ing && cantidad>0 && cantidad<2000 ){
+        if (Ingrediente.CAFE == ing && cantidad>0 && cantidad<2000){
             ingredientes.put(ing, cantidad);
-          }
+        }
+        else if (Ingrediente.LECHE == ing && cantidad>0 && cantidad<2000){
+            ingredientes.put(ing, cantidad);
+        }
+        else if (Ingrediente.AZUCAR == ing && cantidad>0 && cantidad<2000){
+            ingredientes.put(ing, cantidad);
+        }
+        else if (Ingrediente.CACAO == ing && cantidad>0 && cantidad<2000){
+            ingredientes.put(ing, cantidad);
+        }
+        else if (Ingrediente.AGUA == ing && cantidad>0 && cantidad<2000){
+            ingredientes.put(ing, cantidad);
+        }
         else{
-          throw new IllegalArgumentException();
-          }
-        
+            throw new IllegalArgumentException();
+        }
     }
     
     /**
