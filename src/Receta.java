@@ -18,8 +18,17 @@ public class Receta {
 	 * @throws IllegalArgumentException cuando el ingrediente o la cantidad de ingredinte a agregar es invaElida (ej. negativa)
 	 * 
 	 */
-	public void agregarIngrediente(Ingrediente ing, Integer cantidad){
+	public void agregarIngrediente(Ingrediente ing, Integer cantidad) throws Exception
+	{
 		//TODO implementar el metodo
+		// ingredientes posibles: CAFE, LECHE, AZUCAR, CACAO, AGUA
+		if ( Ingrediente.values()==ing && cantidad>0 && cantidad<2000 ){
+		    ingredientes.put(ing, cantidad);
+		  }
+		else{
+		  throw new IllegalArgumentException();
+		  }
+		
 	}
 	
 	/**
